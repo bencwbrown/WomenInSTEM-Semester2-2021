@@ -1,0 +1,37 @@
+\section{Introduction}
+
+\begin{frame}{Classical Mechanics}
+
+    \begin{itemize}
+        \item In classical mechanics, the space of all possible states of a system is given by \emph{phase space}, $M$.
+        \item ``\emph{State}'' means not just the \emph{position} but also the \emph{momentum} (of a particle).
+    \end{itemize}
+    
+    \begin{block}{Example}
+        For a particle of unit mass, energy function $E : M \ra \RR$:
+        \begin{equation*}
+            E(x,p) = \frac{p^{2}}{2} + V(x).
+        \end{equation*}
+    \end{block}
+
+    \begin{equation*}
+        \rightsquigarrow \frac{\partial E}{\partial x} = \frac{\partial V}{\partial x} = -\frac{\partial p}{\partial t}, \quad \text{and} \quad \frac{\partial E}{\partial p} = p = \frac{\partial x}{\partial t}.
+    \end{equation*}
+
+\end{frame}
+
+\begin{frame}{Quantum Mechanics}
+
+    \begin{itemize}
+        \item Still have phase space $M$ and energy $E$, but replaces states with \emph{wavefunctions}.
+        \item Classical energy function $E : M \ra \RR$ now becomes an operator $\hat{E} : M \ra M$.
+    \end{itemize}
+
+    \begin{block}{Example}
+        State dynamics for a wavefunction $\psi: M \ra \CC$ are now described by solutions to \emph{Schrödinger's equation}:
+        \begin{equation*}
+            \frac{d\psi}{dt} = -\frac{i}{\hbar}\hat{E}\psi.
+        \end{equation*}
+    \end{block}
+
+\end{frame}

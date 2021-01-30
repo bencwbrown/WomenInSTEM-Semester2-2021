@@ -1,0 +1,197 @@
+%
+% XeTeX specific
+%
+\RequireXeTeX
+\usepackage{xltxtra}
+\usepackage{fontspec}
+\usepackage{xunicode}
+
+% -----------------------------------
+% font config
+% -----------------------------------
+
+\setsansfont{Linux Biolinum}
+\setromanfont{Linux Libertine}
+\setmonofont[Scale=0.9]{Consolas}
+
+% -----------------------------------
+% math
+% -----------------------------------
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathrsfs}   % \mathscr
+\usepackage{stmaryrd}   % \lightning
+\usepackage{mathabx,epsfig}
+\usepackage{physics}
+
+% -----------------------------------
+% macros
+% -----------------------------------
+
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\lra}{\longrightarrow}
+\newcommand{\lla}{\longleftarrow}
+\newcommand{\into}{\hookrightarrow}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\Proj}{\operatorname{Proj}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\GG}{\mathbb{G}}
+\newcommand{\HH}{\mathbb{H}}
+\newcommand{\kk}{\mathbb{k}}
+\newcommand{\ee}{\mathbb{e}}
+\newcommand{\bbA}{\mathbb{A}}
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\half}{\frac{1}{2}}
+\newcommand{\Mat}{\text{Mat}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\Span}{\text{Span}}
+\newcommand{\Bl}{\operatorname{Bl}}
+\newcommand{\Pic}{\operatorname{Pic}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Td}{\operatorname{Td}}
+\newcommand{\Lie}{\operatorname{Lie}}
+\newcommand{\mf}[1]{\mathfrak{#1}}
+\newcommand{\mfg}{\mathfrak{g}}
+\newcommand{\mfn}{\mathfrak{n}}
+\newcommand{\mft}{\mathfrak{t}}
+\newcommand{\mc}[1]{\mathcal{#1}}
+\newcommand{\mcL}{\mathcal{L}}
+\newcommand{\ed}{e^{\ast}}
+\newcommand{\fd}{f^{\ast}}
+\newcommand{\semistable}{\text{ss}}
+\newcommand{\stable}{\text{s}}
+\newcommand{\dual}[1]{#1^{\ast}}
+\newcommand{\w}{\omega}
+\newcommand{\pt}{\text{pt}}
+\newcommand{\GL}{\operatorname{GL}}
+\newcommand{\SL}{\operatorname{SL}}
+\newcommand{\SU}{\operatorname{SU}}
+\newcommand{\Sp}{\operatorname{Sp}}
+\newcommand{\PSL}{\operatorname{PSL}}
+\newcommand{\Hilb}{\operatorname{Hilb}}
+\newcommand{\lat}{\operatorname{lat}}
+\newcommand{\gp}{\operatorname{gp}}
+\newcommand{\pos}{\operatorname{pos}}
+\newcommand{\Diff}{\operatorname{Diff}}
+\newcommand{\ind}{\operatorname{ind}}
+\newcommand{\td}{\operatorname{td}}
+\newcommand{\ch}{\operatorname{ch}}
+\newcommand{\coker}{\operatorname{coker}}
+\newcommand{\Ver}{\operatorname{Ver}}
+
+\newcommand{\sssslash}{\mathbin{/\mkern-6mu/\mkern-6mu/\mkern-6mu/}}
+\newcommand{\restr}[2]{\left.#1\right|_{#2}}
+
+\def\acts{\mathrel{\reflectbox{$\righttoleftarrow$}}}
+
+% -----------------------------------
+% grammar and textstyle
+% -----------------------------------
+
+\usepackage{polyglossia}
+\setdefaultlanguage[variant=british]{english}
+\usepackage{csquotes}
+% underlining
+\usepackage{soul} % ulem redifines \emph, this sucks
+\usepackage{bookmark}
+
+% -----------------------------------
+% colors
+% -----------------------------------
+
+\usepackage{xcolor}
+\usepackage{colortbl}
+
+% listing colors
+% https://kuler.adobe.com/Color-palette-color-theme-4004722
+\definecolor{keyword}{RGB}{239,33,74}
+\definecolor{number}{RGB}{243,202,22}
+\definecolor{comment}{RGB}{126,158,19}
+\definecolor{string}{RGB}{6,129,128}
+
+
+% -----------------------------------
+% links and references
+% -----------------------------------
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=false,
+    % hide bookmarks
+    pdfpagemode=UseNone,
+    % meta
+    pdfauthor={\presentationAuthor},
+    pdftitle={\presentationTitle}
+}
+\usepackage[english]{cleveref}
+
+% -----------------------------------
+% bibliography and glossaries
+% -----------------------------------
+
+\usepackage[
+    backend=biber,
+    style=alphabetic-verb
+    ]{biblatex}
+\addbibresource{presentation.bib}
+\usepackage{glossaries}
+\input{glossary}
+\makeglossaries
+
+% -----------------------------------
+% graphics
+% -----------------------------------
+
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, shadows, positioning}
+\usepackage{tikz-cd}
+\usepackage{adforn} % ornaments, used in titlepage
+
+% -----------------------------------
+% beamer theme
+% -----------------------------------
+
+% you can't locate the theme in a subfolder without shooting yourself in the knee
+\usetheme{alinz}
+
+% -----------------------------------
+% listings and pseudocode
+% -----------------------------------
+
+\Crefname{lstlisting}{Listing}{Listings}
+\crefname{lstlisting}{listing}{listings}
+
+\usepackage{listings}
+\lstset{
+    basicstyle=\footnotesize\ttfamily\color{lightdark},
+    backgroundcolor=\color{blockbg},
+    numbers=left,
+    %numbersep=6pt,
+    numberstyle=\scriptsize\color{granite},
+    commentstyle=\sffamily\itshape\color{sea},
+    keywordstyle=\bfseries\color{raspberry},
+    stringstyle=\itshape\color{lake},
+    showstringspaces=false,
+    breaklines=true,
+    breakatwhitespace=true,
+    frame=lr,
+    framerule=0pt,
+    framesep=6pt,
+    captionpos=b
+}
+% for pseudocode
+\usepackage[slide,linesnumbered,algoruled]{algorithm2e}
+
+\input{misc/javascript}
+%\input{misc/html5}

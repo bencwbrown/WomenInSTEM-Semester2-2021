@@ -1,0 +1,75 @@
+\section{Outlook}
+
+\begin{frame}{Motivation}
+    \begin{block}{Verlinde Formula}
+        \begin{itemize}
+            \item Let $\mc{N}$ be the moduli space of stable $\SL_{2}$-bundles over $\Sigma_{2}$; it is isomorphic to $\CC\PP^{3}$ \cite{NR1969}.
+            \item Geometric quantisation $\mc{Q}(\mc{N}) := H^{0}(\mc{N}; \mc{L}^{\otimes k})$; its dimension equals the \textbf{Verlinde formula} \cite{verlinde1988, JW1992},
+            \begin{equation*}
+                \begin{split}
+                    \dim \mc{Q}(\mc{N}) = \Ver(k) &= \frac{k^{3}}{6} + k^{2} + \frac{11k}{6} + 1 \\
+                    &= \frac{(k+1)(k+2)(k+3)}{3!}.
+                \end{split}
+            \end{equation*}
+            \item Named after Dutch physicist Erik Verlinde, who was working on conformal field theories.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Integration}
+    \begin{block}{Riemann-Roch-Hirzebruch Theorem}
+        For toric $X$, lattice point count of $\Delta_{X}$ equals to Euler characteristic,
+        \vspace*{-12pt}
+        $$ \chi(X) = \int_{X} e^{c_{1}( \mc{O}(k) )}\cdot \Td{(TX)}. $$
+        \vspace*{-12pt}
+    \end{block}
+    \begin{block}{Example}
+        For $X = \CC\PP^{3}$, have $e^{c_{1}(\mc{O}(k))} = 1 + kH + \tfrac{k^{2}}{2}H^{2} + \tfrac{k^{3}}{6}H^{3}$, and $\Td{(T\CC\PP^{3})} = 1 + 2H + \tfrac{11}{6}H^{2} + H^{3}$:
+        $$ \chi(\CC\PP^{3}) = \int_{\CC\PP^{3}} \big( \tfrac{k^{3}}{6} + k^{2} + \tfrac{11k}{6} + 1 \big) \cdot H^{3} + \ldots = \Ver(k). $$
+    \end{block}
+\end{frame}
+
+\begin{frame}{Our Direction}
+    \begin{block}{Lattice Points}
+    \begin{itemize}
+        \item So $\Ver(k) = \chi(\CC\PP^{3}) = \#( k\cdot \Delta_{3} \cap \ZZ^{3} )$.
+        \item Anything similar for hypertoric manifolds?
+    \end{itemize}
+    \end{block}
+    \begin{block}{Equivariant Verlinde Formula}
+        \begin{itemize}
+            \item Recently, equivariant Verlinde formula for moduli spaces Higgs bundle, $\mc{M}$, popped up \cite{GP2017}.
+            \item $\dim \mc{Q} (\mc{M}) = \infty$, but $\mc{M}$ has a $\CC^{\ast}$-action.
+            \item Decompose into $\CC^{\ast}$-weight spaces:
+            \vspace*{-6pt}
+                $$ \dim \mc{Q} (\mc{M}) = \sum_{n} t^{n} \cdot \dim \mc{Q}_{n}(\mc{M}), $$
+            \vspace*{-6pt}
+            but now $\dim \mc{Q}_{n}(\mc{M}) < \infty$.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Localisation}
+    \begin{block}{Fixed-Point Formula}
+        \vspace*{-12pt}
+        $$ \sum_{q \in \Delta} e^{\langle q, \phi \rangle} = \sum_{p \in M^{T}} \frac{ e^{\langle p, \phi \rangle} }{ \prod_{k = 1}^{n} (1- e^{\langle \alpha_{k}^{p}, \phi \rangle}) }, $$
+            with edge vectors $\alpha_{k}^{p}$, and $\langle \alpha_{k}^{p}, \phi \rangle \neq 0$, \cite{barvinok1993}.
+        \begin{itemize}
+            \item Letting $\phi \ra 0$ gets the lattice point count (for Delzant $\Delta$).
+        \end{itemize}
+    \end{block}
+    \begin{block}{Example for $T^{\ast}\CC\PP^{3}$}
+        For $(T^{\ast}\CC\PP^{3})_{\epsilon-\text{cut}}$, get
+        $$ \frac{(\epsilon + 1)(\epsilon + 2)(\epsilon + 3)}{3!} \cdot \frac{(k + \epsilon +1)(k + \epsilon + 2)(k + \epsilon + 3)}{3!}. $$
+        Observe that for $\epsilon = 0$, it becomes $\Ver(k)$.
+    \end{block}   
+\end{frame}
+
+\begin{frame}{Other Hypertoric Manifolds}
+    \begin{block}{Non-Convex Core}
+        Want to see what happens for hypertoric manifolds with non-convex cores.
+    \end{block}
+    \begin{block}{Example}
+        \vspace{136pt}
+    \end{block}      
+\end{frame}
