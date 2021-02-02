@@ -22,10 +22,12 @@
 
     \begin{itemize}
         \item $M = \RR^{2n} \cong \CC^{2}$ via $(x_{k}, p_{k}) \rightsquigarrow z_{i} = p_{k} + ix_{k} \in \CC^{n}$.
-        \item Choose energy function: 
+        \item Consider the energy function: 
         $$ E : M \ra [0,\infty), \quad\ E(z) = \tfrac{\|z\|^{2}}{2}. $$
-        \item For some $\lambda \in [0,\infty)$, energy level $E_{\lambda} = E^{-1}(\lambda) \cong S^{2n-1}$ is a level-set in $M$.
-        \item Each energy level $E_{\lambda}$ has an $S^{1}$-symmetry,
+        \item Associated operator is:
+        $$ \mc{Q}(\phi) = \sum_{k=1}^{n} \left( q_{k} \frac{\partial}{\partial p_{k}} - p_{k} \frac{\partial}{\partial q_{k}} \right), \qquad \text{(rotational vector field).} $$
+        \item For $\lambda \in [0,\infty)$, energy level-set $E_{\lambda} := E^{-1}(\lambda) \cong S^{2n-1} \subseteq \RR^{2n}$.
+        \item Each $E_{\lambda}$ has an $S^{1}$-symmetry,
         $$ e^{i\theta}\cdot (z_{1}, \ldots, z_{n}) = (e^{i\theta}z_{1}, \ldots, e^{i\theta}z_{n}) \rightsquigarrow E(e^{i\theta}\cdot z) = E(z) = \lambda. $$
     \end{itemize}
 
@@ -34,7 +36,9 @@
 \begin{frame}{Quantisation in Action}
 
     \begin{itemize}
-        \item 
+        \item For $N \in \NN$, can prove that a quantisation $\mc{Q}(E_{N})$ exists.
+        \item Eigenvalues for $\mc{Q}(\phi)$ can be identified with \emph{homogeneous} polynomials in $n$ variables of \emph{degree} $N$:
+        $$ \mc{Q}(E_{N}) \cong \left\{ z_{1}^{k_{1}}\ldots z_{n}^{k_{n}} : \sum_{j = 1}^{n} k_{j} = N \right\}. $$
     \end{itemize}
 
 \end{frame}
