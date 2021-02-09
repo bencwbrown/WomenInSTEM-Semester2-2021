@@ -1,39 +1,20 @@
 \section{Introduction}
 
-\begin{frame}{Classical Mechanics}
+\begin{frame}{Some Physics}
 
-    \begin{itemize}
-        \item In classical mechanics, the space of all possible states of a system is given by \emph{phase space}, $M$.
-        \item ``\emph{State}'' means not just the \emph{position} but also the \emph{momentum} (of a particle).
-    \end{itemize}
-    
-    \begin{block}{Example}
-        For a particle of unit mass, energy function $E : M \ra \RR$:
-        \begin{equation*}
-            E(x,p) = \frac{p^{2}}{2} + V(x).
-        \end{equation*}
+    \begin{block}{Classical Mechanics}
+        \begin{itemize}
+            \item In classical mechanics, the space of all possible states of a system is given by \emph{phase space}, $M$.
+            \item ``\emph{State}'' describes the \emph{position} and the \emph{momentum}.
+        \end{itemize}
     \end{block}
 
-    \begin{equation*}
-        \rightsquigarrow \frac{\partial E}{\partial x} = \frac{\partial V}{\partial x} = -\frac{\partial p}{\partial t}, \quad \text{and} \quad \frac{\partial E}{\partial p} = p = \frac{\partial x}{\partial t}.
-    \end{equation*}
-
-\end{frame}
-
-\begin{frame}{Quantum Mechanics}
-
-    \begin{itemize}
-        \item Still have phase space $M$ and energy $E$, but replaces states with \emph{wavefunctions}.
-        \item Classical energy function $E : M \ra \RR$ now becomes an operator $\hat{E} : M \ra M$.
-    \end{itemize}
-
-    \begin{block}{Question}
-        For a phase space $M$, what is $\mc{Q}(M)$?
-
-    \begin{itemize}
-        \item Phase space $M$ represents the position and momentum of a system, with energy function $E : M \ra \RR$.
-        \item Quantisation $\mc{Q}(M)$ should then represent the wavefunctions $\psi : M \ra \CC$, with operators $\hat{E} : M \ra M$.
-    \end{itemize}
+    \begin{block}{Quantum Mechanics}
+        \begin{itemize}
+            \item In quantum mechanics, still have phase space $M$ but states are replaced by \emph{wavefunctions}.
+            \item In my research, wavefunctions are just \emph{homogeneous polynomials}, for example:
+            $$ \phi(\vb{z}) = z_{1}^{k_{1}}z_{2}^{k_{2}}z_{3}^{k_{3}}, \qquad \text{where } k_{1} + k_{2} + k_{3} = k. $$
+        \end{itemize}
     \end{block}
 
 \end{frame}
