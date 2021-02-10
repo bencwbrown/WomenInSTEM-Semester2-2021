@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.23">
-<info created="D:20210210123732" modified="D:20210210130104"/>
+<info created="D:20210210123732" modified="D:20210210131207"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -443,5 +443,30 @@ h
 304 448 m
 304 416 l
 </path>
+<use name="mark/disk(sx)" pos="224 640" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="224 576" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="224 512" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="224 448" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="288 448" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="352 448" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="416 448" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="352 512" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="288 512" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="288 576" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="224 704" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="160 704" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="160 640" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="160 576" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="160 512" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="160 448" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="224 384" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="288 384" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="352 384" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="416 384" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="480 384" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="480 448" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="416 512" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="352 576" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="288 640" size="normal" stroke="red"/>
 </page>
 </ipe>
